@@ -1,0 +1,4 @@
+FROM openjdk:8
+LABEL maintainer="Abhishek"
+ADD target/spring-boot-blank-0.0.1-SNAPSHOT.jar spring-boot-blank.jar
+ENTRYPOINT ["java", "-jar", "spring-boot-blank.jar"]
